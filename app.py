@@ -8,21 +8,21 @@ IMG_SIZE = 224
 
 RECOMMENDATIONS = {
     'Potato___Early_blight': [
-        '🍂 Remove and destroy affected leaves immediately.',
-        '💊 Apply a copper-based or chlorothalonil fungicide.',
-        '💧 Avoid overhead irrigation; water at the base.',
-        '🔄 Rotate crops next season to break the disease cycle.',
+        'Remove and destroy affected leaves immediately.',
+        'Apply a copper-based or chlorothalonil fungicide.',
+        'Avoid overhead irrigation; water at the base.',
+        'Rotate crops next season to break the disease cycle.',
     ],
     'Potato___Late_blight': [
-        '🚨 Act immediately — Late Blight spreads rapidly.',
-        '💊 Apply a systemic fungicide (e.g., Metalaxyl or Mancozeb).',
-        '🗑️ Remove and bag all infected plant material; do not compost.',
-        '📢 Alert neighboring farmers to prevent regional spread.',
+        'Act immediately — Late Blight spreads rapidly.',
+        'Apply a systemic fungicide (e.g., Metalaxyl or Mancozeb).',
+        'Remove and bag all infected plant material; do not compost.',
+        'Alert neighboring farmers to prevent regional spread.',
     ],
     'Potato___healthy': [
-        '✅ Your plant appears healthy!',
-        '👀 Continue monitoring weekly for early signs of disease.',
-        '💧 Maintain consistent watering and balanced fertilization.',
+        'Your plant appears healthy!',
+        'Continue monitoring weekly for early signs of disease.',
+        'Maintain consistent watering and balanced fertilization.',
     ],
 }
 
@@ -75,8 +75,8 @@ def overlay_heatmap(original_img: np.ndarray, heatmap: np.ndarray) -> np.ndarray
 
 
 # ── UI ──────────────────────────────────────────────────────────────────────
-st.set_page_config(page_title='Potato Blight Detector', page_icon='🥔', layout='centered')
-st.title('🥔 Potato Blight Detector')
+st.set_page_config(page_title='Potato Blight Detector', page_icon='Potato Blight Detector', layout='centered')
+st.title('Potato Blight Detector')
 st.caption('Upload a photo of a potato leaf to detect Early Blight, Late Blight, or confirm it is Healthy.')
 
 uploaded = st.file_uploader('Upload a leaf image', type=['jpg', 'jpeg', 'png', 'webp'])
