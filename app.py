@@ -107,10 +107,10 @@ if uploaded:
     col1.image(img_array.astype('uint8'), caption='Uploaded Image', use_container_width=True)
     col2.image(overlay, caption='Grad-CAM Heatmap (areas the model focused on)', use_container_width=True)
 
-    st.subheader('📋 Recommended Actions')
+    st.subheader('Recommended Actions')
     for tip in RECOMMENDATIONS[pred_class]:
         st.markdown(f'- {tip}')
 
-    st.subheader('📊 All Class Probabilities')
+    st.subheader('All Class Probabilities')
     for name, prob in zip(class_names, preds):
         st.progress(float(prob), text=f"{name.replace('Potato___','').replace('_',' ')}: {prob:.1%}")
