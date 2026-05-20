@@ -1,7 +1,6 @@
-# Model & data files
-*.keras
-*.h5
-*.npy
+# Model & data files (keep model files for deployment)
+# potato_blight_model.keras
+# class_names.npy
 potato_data/
 PlantVillage/
 archive.zip
